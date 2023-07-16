@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace ;
+}
+body{
+    background: #c1c0c0;
+}
+.nav-link{
+    font-size: large; 
+    margin: 9px;
+    color: black;
+    border: 1px solid black; 
+    border-radius: 0px 20px 10px;
+    width: 130px;
+    text-align: center;
+}
+.nav-link:hover{
+    background: #000;
+    color: white;
+    transition: 1s;
+    
+}
+
+#landText{
+    animation-name: flippy ;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flippy {
+    0%{
+        transform:rotate(2deg);
+    }
+    50%{
+        transform: rotate(4deg);
+    }
+    100%{
+        transform:rotate(-2deg);
+    }
+}
+.signUp{
+    margin:auto; 
+    margin-bottom:30px;
+    width: 25rem;
+    height: 70vh;
+    border: 1px solid;
+    border-radius: 50px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ input{
+    margin: 0.7rem;
+    width: 23rem;
+    height: 3rem;
+ }
+ #submit{
+    /* border: none; */
+    width: 45%;
+    margin-top: 12px;
+    background:transparent;
+    border-radius:0px 20px ;
+ }
+ #submit:hover{
+    background: #000;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(8px);
+ }
+
+ .why, .WHAT,.ABOUTLANDING{
+    /* background: #b5a3a3; */
+    display: flex;
+    margin:20px;
+    margin-left: 80px;
+    padding: 9px;
+}
+#ftPic{
+ margin:9px 100px ;
+    width: 30rem;
+   
+ }
+ .landheading{
+    border: 2px solid;
+    border-radius: 20px 0;
+    width:500px;
+    margin: 5px auto;
+
+    text-align: center;
+ }
